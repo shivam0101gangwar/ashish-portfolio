@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         class="stylesheet">
+    <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
     <!-------------------------- Home Page -------------------------->
     <div class="FirstElement" id="home">
         <div class="profile-photo">
-            <img src="ashish.png" alt="profile picture">
+            <img src="ashish.jpg" alt="profile picture">
         </div>
         <div class="profile-text">
             <h5>Hi I'm </h5><br>
@@ -54,13 +55,16 @@
                 opportunities to learn and grow in this ever-evolving field</p>
 
             <div class="btn-group">
-                <a href="Ashish cv.pdf" class="btn   active" target="_blank ">Download CV</a>
+                <a href="Ashish cv.pdf" class="btn   active" target="_blank">Download CV</a>
                 <a href="mailto:ashish221722@gmail.com" class="btn">Contact</a>
             </div>
 
             <div class="social">
-                <a href="mailto:ashish221722@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://github.com/ashish221722" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/thakur__ashish17/"
+                    target="_blank" class="footer__social">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                <a href="https://github.com/Ashish810-gif" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://linkedin.com/in/ashish221722" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
@@ -172,7 +176,7 @@
                     <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce
                         myself, share my projects, and provide information about my education and internship.</p>
                 </div>
-                
+
                 <!-- 3rd Project -->
                 <div class="project">
                     <i class="fa fa-desktop"></i>
@@ -194,13 +198,41 @@
                 <p>Get In Touch</p>
             </div>
             <div class="contact">
-                <form name="submitToGoogleSheet">
-                    <input type="text" name="NAME" placeholder="Name" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
-                </form>
+                <form action="https://api.web3forms.com/submit" method="POST"
+                class="contact__form grid">
+                <input type="hidden" name="access_key" value="1b9e7cd7-a854-464d-b473-eac017b37a7a">
+
+                <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label for="name" class="contact__label">Name</label>
+                        <input type="text" id="name" name="name" class="contact__input" required>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="email" class="contact__label">E-mail</label>
+                        <input type="email" id="email" name="email" class="contact__input" required>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <label for="subject" class="contact__label">Subject</label>
+                    <input type="text" id="subject" name="subject" class="contact__input" required>
+                </div>
+
+                <div class="contact__content">
+                    <label for="message" class="contact__label">Description</label>
+                    <textarea id="message" name="message" cols="0" rows="7" class="contact__input"
+                        required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" class="button button--flex">
+                        Send message
+                        <i class="uil uil-message button__icon"></i>
+                    </button>
+                </div>
+            </form>
+
                 <span id="msg"></span>
             </div>
         </div>
